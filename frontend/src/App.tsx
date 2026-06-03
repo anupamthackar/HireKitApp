@@ -1,14 +1,14 @@
 import { Routes, Route } from 'react-router-dom'
 import { ThemeProvider, CssBaseline, Box } from '@mui/material'
 import { theme } from './theme'
-import Sidebar from '../components/Sidebar/Sidebar'
-import Chat from '../pages/Chat/Chat'
-import ResumeBuilder from '../pages/ResumeBuilder/ResumeBuilder'
-import InterviewPrep from '../pages/InterviewPrep/InterviewPrep'
-import Outreach from '../pages/Outreach/Outreach'
-import JobTracker from '../pages/JobTracker/JobTracker'
-import Database from '../pages/Database/Database'
-import Profile from '../pages/Profile/Profile'
+import Sidebar from './components/Sidebar/Sidebar'
+import Chat from './pages/Chat/Chat'
+import ResumeBuilder from './pages/ResumeBuilder/ResumeBuilder'
+import InterviewPrep from './pages/InterviewPrep/InterviewPrep'
+import Outreach from './pages/Outreach/Outreach'
+import JobTracker from './pages/JobTracker/JobTracker'
+import Database from './pages/Database/Database'
+import Profile from './pages/Profile/Profile'
 
 function App() {
   return (
