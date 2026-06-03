@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.ag-theme-quartz {
+  --ag-foreground-color: #ffffff;
+  --ag-background-color: #1a1a1a;
+  --ag-header-background-color: #00d4ff20;
+  --ag-odd-row-background-color: #151515;
+}
