@@ -1,9 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import Optional, List
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
 from backend.services.job_service import JobService
 
 router = APIRouter(prefix="/jobs", tags=["jobs"])
@@ -19,6 +16,8 @@ class JobResponse(BaseModel):
     match: str
     sponsorship: bool = False
     sp_status: Optional[str]
+    source: Optional[str]
+    url: Optional[str]
 
 @router.get("/", response_model=List[JobResponse])
 async def list_jobs(limit: int = 50, match: Optional[str] = None, sponsored: bool = False):

@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.api import chat_router, jobs_router
+from backend.api.chat.router import router as chat_router
+from backend.api.jobs.router import router as jobs_router
 
 app = FastAPI(title="HireKit API", version="0.1.0")
 

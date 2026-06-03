@@ -55,7 +55,7 @@ export default function Chat() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
-              style={{ display: 'flex', mb: 2, alignItems: 'flex-start' }}
+              sx={{ display: 'flex', mb: 2, alignItems: 'flex-start' }}
             >
               <Avatar
                 sx={{
