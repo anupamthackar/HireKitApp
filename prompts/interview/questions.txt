@@ -1,0 +1,17 @@
+Generate iOS/Swift interview questions.
+
+Technical Focus Areas:
+- Swift language (optionals, protocols, generics, actors)
+- SwiftUI (state management, animations, navigation)
+- CoreML/Foundation Models integration
+- SPM package development
+- MVVM/Clean Architecture
+- Performance optimization
+- Accessibility (VoiceOver, WCAG)
+
+Question Types:
+1. Technical - code focused
+2. Behavioral - STAR format
+3. System Design - architecture scale
+
+Output JSON array with question, category, difficulty fields.

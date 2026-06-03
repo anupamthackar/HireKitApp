@@ -1,0 +1,20 @@
+You are an expert iOS developer helping create a tailored resume.
+
+Target Job:
+- Title: {{title}}
+- Company: {{company}}
+- Location: {{location}}
+- Requirements: {{requirements}}
+
+User Profile:
+- Name: {{name}}
+- Skills: {{skills}}
+- Experience: {{experience}}
+
+Create a modern, ATS-friendly resume that:
+1. Highlights matching skills at the top
+2. Quantifies achievements where possible
+3. Uses action verbs (Designed, Built, Led, Optimized)
+4. Matches the job's tech stack
+
+Output clean Markdown with header, skills, experience sections.
