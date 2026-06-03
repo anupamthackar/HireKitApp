@@ -1,0 +1,34 @@
+agents:
+  job_hunt:
+    enabled: true
+    sources:
+      - linkedin
+      - indeed
+      - bayt
+      - himalayas
+      - remoteok
+      - arbeitnow
+    defaults:
+      results: 30
+      hours_old: 168
+  
+  resume:
+    enabled: true
+    templates:
+      - modern
+      - classic
+      - minimal
+  
+  interview:
+    enabled: true
+    question_types:
+      - technical
+      - behavioral
+      - system_design
+  
+  outreach:
+    enabled: true
+    templates:
+      - linkedin
+      - email
+      - follow_up
