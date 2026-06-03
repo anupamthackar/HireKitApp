@@ -46,13 +46,14 @@ class InterviewAgent:
             }
         ]
         
-        # Filter by tech stack mentioned in job
-        tech_stack = job.get("description", "").lower()
+        # Filter by tech stack mentioned in job (if job exists)
         filtered = []
-        for q in base_questions:
-            if any(tech.lower() in tech_stack for tech in q["category"]):
-                filtered.append(q)
-
+        if job:
+            tech_stack = (job.get("description") or "").lower()
+            for q in base_questions:
+                if q["category"].lower() in tech_stack:
+                    filtered.append(q)
+        
         return filtered or base_questions
 
     async def _generate_behavioral_questions(self, resume: Dict, job: Dict) -> List[Dict]:
@@ -82,5 +83,4 @@ class InterviewAgent:
 
     async def evaluate_answer(self, question: str, answer: str) -> Dict:
         """Evaluate interview answer with LLM"""
-        # Would call LLM to evaluate
         return {"score": 80, "feedback": "Good answer with room for improvement"}
